@@ -1,0 +1,34 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.validation{
+    background-color:#f8a488;
+    text-align: center;
+    min-width: 250px;
+    max-width: 20%;
+}
+form{
+    width: 20%;
+    text-align: center;
+}
+input{
+border: 1px solid black;
+border-top: 0px ;
+margin-left: 3px;
+}
+.user-data{
+    background-color: aquamarine;
+    border: 1px solid green;
+    margin: 5px;
+    padding: 10px;
+}
+.submit-btn{
+    min-width:180px;
+    max-width: 230px;
+}
+label{
+    font-size: 15px ;
+}

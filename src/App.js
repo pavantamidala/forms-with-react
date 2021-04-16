@@ -5,11 +5,12 @@ import ShowData from './components/showData'
 
 function App() {
   const [formData, setFormData] = useState([]);
+  const [userObj, setUserObj] = useState({ firstName: "", lastName: '',email: '', number: ''})
   return (
-    <div>
-      <h1>form</h1>
-      <FormComponent formData={formData} setFormData={setFormData} />
-      <ShowData setFormData={setFormData} formData={formData} />
+    <div className='container'>
+      <h1 className="heading">Enter your data</h1>
+      <FormComponent userObj={userObj} setUserObj = {setUserObj} formData={formData} setFormData={setFormData} />
+      <ShowData userObj={userObj} setUserObj={setUserObj} setFormData={setFormData} formData={formData} />
     </div>
   );
 }
