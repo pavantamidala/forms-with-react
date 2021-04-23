@@ -17,6 +17,7 @@
   margin: auto;
   text-align: center;
   font-family: arial;
+   word-wrap: break-word;
 }
 .edit-btn,.delete-btn {
   border: none;
