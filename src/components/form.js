@@ -5,10 +5,13 @@ import clickHandle from './clickHandle';
 import TextField from '@material-ui/core/TextField';
 
 
-function FormComponent(props) {
+
+
+function FormComponent(props) { 
+   
     const [validation,setValidation] = useState({firstName:"",lastName:"",email:"",number:""})
     return (
-        <form className="form"  onSubmit={(e) => clickHandle(e, props,validation,setValidation)}>
+        <form   className="form"  onSubmit={(e) => clickHandle(e, props,validation,setValidation)}>
             
             <TextField label="First Name" variant="outlined" type="text" id="firstName" value={props.userObj.firstName} name="firstName" onChange={e => props.setUserObj({ ...props.userObj, "firstName": e.target.value })} /> <br />
             <p className="validation firstName-validation"> {validation.firstName} </p>
