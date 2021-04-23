@@ -10,7 +10,7 @@ function ShowData(props){
         <div className="user-data">
             {
                 props.formData.map((obj) => {
-                    return <div key={obj.id}>
+                    return <div className="card" key={obj.id}>
                         <h3>{obj.firstName}</h3>
                         <h3>{obj.lastName}</h3>
                         <h4> {obj.number} </h4>

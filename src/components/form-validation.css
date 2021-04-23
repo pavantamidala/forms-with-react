@@ -11,14 +11,28 @@
     max-width: 20%;
 }
 
-input{
-border: 1px solid black;
-border-top: 0px ;
-margin-left: 3px;
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
 }
-.user-data{
-    background-color: aquamarine;
-    border: 1px solid green;
+.edit-btn,.delete-btn {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  margin-top: 2px;
+  padding: 8px;
+  color: white;
+  background-color: #132c33;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.edit-btn:hover,.delete-btn:hover {
+    opacity: 0.7;
 }
 .submit-btn{
     
